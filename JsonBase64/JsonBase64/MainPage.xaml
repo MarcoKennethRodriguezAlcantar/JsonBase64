@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JsonBase64.MainPage">
+    <ScrollView>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Registro de usaurio con Api" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="Nombre:"></Label>
+            <Entry Text="{Binding Name}"></Entry>
+            <Label Text="Apellido paterno:"></Label>
+            <Entry Text="{Binding Ap1}"></Entry>
+            <Label Text="Apellido materno:"></Label>
+            <Entry Text="{Binding Ap2}"></Entry>
+            <Label Text="Nombre de usuario:"></Label>
+            <Entry Text="{Binding UserName}"></Entry>
+            <Label Text="Contraseña:"></Label>
+            <Entry Text="{Binding Password}"></Entry>
+            <Button Text="Registrar" Command="{Binding RegisterCommand}"/>
+            <Label Text="{Binding JsonResult}"></Label>
+           
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
